@@ -22,7 +22,7 @@ const Conta = () => {
     const { isLoggedIn } = useContext(AppContext)
     console.log('retorno da página conta', isLoggedIn)
 
-    !isLoggedIn && navigate("/")
+    !isLoggedIn && navigate('/')
 
     useEffect(() => {
         const getData = async () => {
